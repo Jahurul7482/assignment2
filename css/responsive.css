@@ -1,0 +1,118 @@
+/* ==============================
+responsive style here
+================================*/
+/* Tablets Ipads portrait mode */
+@media only screen and (max-width: 1024px)
+{
+    header
+    {
+        padding: 0 5%;
+    }
+    main
+    {
+        padding: 20px 5%;
+    }
+    footer
+    {
+        padding: 0 5%;
+    }
+}
+/* =================================
+responsive for tablet
+==================================*/
+@media only screen and (max-width:767px)
+{
+    .banner
+    {
+        flex-direction: column;
+    }
+    .trigger
+    {
+        display: block;
+        position: fixed;
+        float: right;
+        transition: 0.5s;
+    }
+    .trigger:hover
+    {
+        transform: scale(1.5);
+    }
+    ul
+    {
+        background-color: slategrey;
+        position: fixed;
+        top: 5rem;
+        transition: 0.5s;
+        height: 100vh;
+        left: 100%;
+        width: 120%;
+        z-index: 1;
+    }
+    ul li
+    {
+        text-align: center;
+        display: block;
+    }
+    ul li a
+    {
+        display: block;
+    }
+    .casual-types, .formal-types, .loafer-types
+    {
+        grid-template-columns: auto auto;
+    }
+    #trigger:checked ~ ul
+    {
+        left: -15%;
+    }
+    #trigger:checked + label
+    {
+        transform: rotate(90deg);
+    }
+    footer
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 2.5rem;
+    }
+    section div div
+    {
+        padding: 10px 0;
+    }
+    section
+    {
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .type-heading h3
+    {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .casual
+    {
+        text-align: center;
+    }
+    section div div img
+    {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    .logo a img
+    {
+        width: 100%;
+    }
+}
+/* =================================
+responsive for mobile
+==================================*/
+@media only screen and (max-width: 480px)
+{
+    .casual-types, .formal-types, .loafer-types
+    {
+        grid-template-columns: auto;
+    }
+}

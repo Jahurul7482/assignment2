@@ -1,0 +1,287 @@
+/* ========================
+css basic setup start
+==========================*/
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    color: #363958;
+    box-sizing: border-box;
+}
+h1,h2,h3
+{
+    font-family: 'Bebas Neue', cursive;
+}
+ul li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+.buy-now-btn
+{
+    padding: 10px 20px;
+    color: aliceblue;
+    background-color: #0707ff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px gray;
+}
+.clear
+{
+    clear: both;
+}
+/* ==========================
+main css start
+============================*/
+header
+{
+    background-color: #FeF9F3;
+    padding: 0 10%;
+}
+.header-top
+{
+    height: 5rem;
+}
+.logo
+{
+    width: 50%;
+    float: left;
+}
+.logo img
+{
+    margin:0 auto;
+    height: 3rem;
+}
+nav
+{
+    float: right;
+    line-height: 5rem;
+}
+#trigger, .trigger
+{
+    display: none;
+}
+ul li
+{
+    margin-left: 30px;
+    display: inline;
+}
+ul li a
+{
+    display: inline-block;
+    color: #363958;
+}
+.banner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.banner h1
+{
+    font-size: 3.5rem;
+    color: #363958;
+}
+.banner .content span
+{
+    color: #FA804C;
+    font-family: 'Bebas Neue', cursive;
+}
+.banner .content p
+{
+    padding: 30px 0;
+}
+main
+{
+    padding: 20px 10%;
+}
+main > div h3
+{
+    font-size: 2rem;
+    color: #363958;
+}
+.casual-types,.formal-types,.loafer-types
+{
+    padding-top: 30px;
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: auto auto auto;
+}
+.card
+{
+    box-shadow: 0 0 10px #eeeeee;
+    border-radius: 20px;
+}
+.casual-types img,.formal-types img,.loafer-types img
+{
+    width: 90%;
+    border-radius: 1rem;
+    align-items: center;
+    background-color: #F1F1F1;
+}
+.casual-types h4,.formal-types h4, .loafer-types h4
+{
+    padding: 10px 0;
+}
+.casual-types p, .formal-types p, .loafer-types p
+{
+    padding: 10px 0;
+}
+.casual-types span,.formal-types span, .loafer-types span
+{
+    color: #FA804C;
+    font-size: 2rem;
+}
+.casual-types .buy-now-btn,.formal-types .buy-now-btn,.loafer-types .buy-now-btn
+{
+    float: right;
+    margin-right: 6%;
+}
+.type-heading
+{
+    margin-top: 50px;
+}
+.loafer-types img
+{
+    height: 200px;
+}
+.formal
+{
+    margin: 30px 0;
+}
+section
+{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+}
+section div div img
+{
+    float: left;
+    margin-right: 20px;
+    width: 4rem;
+}
+section div div
+{
+    padding: 15px 0;
+    box-shadow: 0 0 10px #F1F1F1;
+    border-radius: 20px;
+}
+footer
+{
+    display: flex;
+    padding: 0 10%;
+    line-height: 5rem;
+    background-color: #cccccc;
+}
+footer span,a
+{
+    padding-left: 10px;
+}
+.buy-now-btn:hover
+{
+    box-shadow: 3px 3px 10px gray inset;
+}
+ul li:hover
+{
+    background-color: #ddd;
+}
+/* ==============================
+home page css end here
+================================*/
+/* login form css */
+body
+{
+    height: 100vh;
+    background-size: cover;
+}
+* 
+{
+    box-sizing: border-box;
+}
+.wrapper
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    background: rgba(4, 40, 68, 0.90);
+}
+.login
+{
+    border-radius: 2px;
+    padding: 10px 20px 20px 20px;
+    width: 90%;
+    max-width: 320px;
+    background: #ddd;
+    position: relative;
+    padding-bottom: 80px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.login input
+{
+    display: block;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    transition: border-width 0.5s ease;
+    border-radius: 2px;
+    color: #ccc;
+}
+.login input:focus
+{
+    outline: none;
+    color: #444;
+    border-color: #5fb7ff;
+    border-left-width: 30px;
+}
+.login a
+{
+    font-size: 0.8em;
+    color: #2196F3;
+    text-decoration: none;
+}
+.login .title
+{
+    color: rgb(77, 159, 241);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0 30px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+.login button
+{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    background: #2196F3;
+    color: #eeeeee;
+    display: block;
+    border: none;
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 60px;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 2px 2px;
+    transform: rotateZ(0deg);
+    transition: all 0.1s ease-out;
+    border-bottom-width: 7px;
+}
+.login:not(.loading) button:focus
+{
+    border-bottom-width: 4px;
+}
